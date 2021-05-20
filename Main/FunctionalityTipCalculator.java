@@ -23,7 +23,10 @@ public class FunctionalityTipCalculator extends JFrame{
         this.setContentPane(this.mainPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
+        this.setBounds(100,100,450,300);
+        this.setLocation(700,380);
         this.setVisible(true);
+//        textBill.setBounds(10,50,10,50);
 
         ButtonGroup  buttonGroup = new ButtonGroup();
         buttonGroup.add(goodRadioButton);
@@ -43,6 +46,12 @@ public class FunctionalityTipCalculator extends JFrame{
                 } else if (excellentRadioButton.isSelected() == true) {
                     JOptionPane.showMessageDialog(null, "Your Total Bill : " + (bill+20+" tk") );
                 }
+            }
+        });
+        clearButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
             }
         });
     }
