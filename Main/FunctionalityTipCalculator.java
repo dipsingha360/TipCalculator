@@ -51,7 +51,8 @@ public class FunctionalityTipCalculator extends JFrame{
         clearButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                textBill.setText(" ");
+                buttonGroup.clearSelection();
             }
         });
     }
